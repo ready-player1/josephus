@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		84457CC8279D25F900BECB43 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84457CC7279D25F900BECB43 /* main.swift */; };
+		84457CD0279D264A00BECB43 /* LinkedList in Frameworks */ = {isa = PBXBuildFile; productRef = 84457CCF279D264A00BECB43 /* LinkedList */; };
+		84457CD3279D482E00BECB43 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 84457CD2279D482E00BECB43 /* ArgumentParser */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +34,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84457CD3279D482E00BECB43 /* ArgumentParser in Frameworks */,
+				84457CD0279D264A00BECB43 /* LinkedList in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +82,10 @@
 			dependencies = (
 			);
 			name = josephus;
+			packageProductDependencies = (
+				84457CCF279D264A00BECB43 /* LinkedList */,
+				84457CD2279D482E00BECB43 /* ArgumentParser */,
+			);
 			productName = josephus;
 			productReference = 84457CC4279D25F900BECB43 /* josephus */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +114,10 @@
 				Base,
 			);
 			mainGroup = 84457CBB279D25F900BECB43;
+			packageReferences = (
+				84457CCE279D264A00BECB43 /* XCRemoteSwiftPackageReference "SwiftLinkedList" */,
+				84457CD1279D482E00BECB43 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
 			productRefGroup = 84457CC5279D25F900BECB43 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -286,6 +298,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		84457CCE279D264A00BECB43 /* XCRemoteSwiftPackageReference "SwiftLinkedList" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ready-player1/SwiftLinkedList";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		84457CD1279D482E00BECB43 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84457CCF279D264A00BECB43 /* LinkedList */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84457CCE279D264A00BECB43 /* XCRemoteSwiftPackageReference "SwiftLinkedList" */;
+			productName = LinkedList;
+		};
+		84457CD2279D482E00BECB43 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84457CD1279D482E00BECB43 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 84457CBC279D25F900BECB43 /* Project object */;
 }

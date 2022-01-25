@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "swift-argument-parser",
+        "repositoryURL": "https://github.com/apple/swift-argument-parser.git",
+        "state": {
+          "branch": null,
+          "revision": "e1465042f195f374b94f915ba8ca49de24300a0d",
+          "version": "1.0.2"
+        }
+      },
+      {
+        "package": "LinkedList",
+        "repositoryURL": "https://github.com/ready-player1/SwiftLinkedList",
+        "state": {
+          "branch": "main",
+          "revision": "1aa5fb1fec890be24d61ca0241db9313eca54daa",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
