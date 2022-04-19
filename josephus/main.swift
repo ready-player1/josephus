@@ -37,17 +37,14 @@ struct Josephus: ParsableCommand {
   }
 
   func execute(n: Int, k: Int) -> LinkedList<Int> {
-    let excutionList = LinkedList<Int>()
+    let executionList = LinkedList<Int>()
     let people = LinkedList<Int>().circulate()
     people.append(contentsOf: 1...n)
 
     while !people.isEmpty {
-      for _ in 1..<k {
-        people.nextNode()
-      }
-      excutionList <-* people.nextNode()
+      executionList <-* people.advance(distance: k)
     }
-    return excutionList
+    return executionList
   }
 
   func fetch(_ number: Int, from executionList: LinkedList<Int>) -> LinkedList<Int> {
