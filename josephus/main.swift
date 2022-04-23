@@ -42,7 +42,7 @@ struct Josephus: ParsableCommand {
     people.append(contentsOf: 1...n)
 
     while !people.isEmpty {
-      executionList <-* people.advance(distance: k)
+      executionList <-* people.advance(by: k)
     }
     return executionList
   }
